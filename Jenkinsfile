@@ -26,7 +26,7 @@ pipeline {
 		deploy adapters: [tomcat9(url: 'http://localhost:8081/', 
                               credentialsId: 'tomcatuser')], 
                      war: 'target/*.war',
-                     contextPath: 'app'
+                     contextPath: '/app'
 		}
 		
 	}
